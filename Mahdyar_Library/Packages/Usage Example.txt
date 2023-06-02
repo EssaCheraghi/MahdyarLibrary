@@ -1,0 +1,55 @@
+//Add the dll to the project references.
+using ExcelWrapper;
+
+namespace ExcelWrapperClient
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+
+            //Creates an instance of the wrapper to work with
+            ExcelWrapper.Wrapper wrapper = new ExcelWrapper.Wrapper();
+
+            //Create a new instance of excel that is visible
+            wrapper.Create(true);
+
+            //Create a new instance of an existing file wrapper.Open(@"c:\sample1.xls", true);
+
+            //Add a new worksheet name Last
+            wrapper.AddWorksheet("Last");
+
+            //Delete a worksheet based on its index
+            wrapper.DeleteWorksheet(2);
+
+            //Delete a worksheet based on its name
+            wrapper.DeleteWorksheet("Last");
+
+            //Set the value of a single cell
+            wrapper.SetCellValue("A1", "90000");
+
+            //Format the font in a single cell
+            wrapper.FormatCellFont("A30", true, true, false, 20, Color.Beige, "Arial");
+
+            //Set the current range
+            wrapper.SetRange("A1", "A4");
+
+            //Format the font of the range
+            wrapper.FormatRangeFont("A1", "A4", true, true, true, 22, Color.Red, "Gothic");
+
+            //Print out the current worksheet
+            Console.WriteLine(wrapper.CurrentWorksheet);
+
+            //Print out the number of worksheets
+            Console.WriteLine(wrapper.WorksheetCount.ToString());
+
+            //Save in 2007 format
+            wrapper.SaveAs2007("c:\\excelwrapper\\wrapper.xlsx");
+
+            //Close the excel document
+            wrapper.Close();
+
+
+        }
+    }
+}

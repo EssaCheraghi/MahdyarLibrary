@@ -1,0 +1,88 @@
+List of all members.
+
+
+Public Member Functions 
+  Wrapper () 
+  Default constructor. 
+ 
+bool  Create (bool visible) 
+  Create a new excel document. 
+ 
+bool  Open (string path, bool visible) 
+  Open an exisiting excel Document. 
+ 
+void  Close () 
+  Close Excel without saving changes. 
+ 
+void  Save () 
+  Saves the current excel document. 
+ 
+void  AddWorksheet (string name) 
+  Add a new worksheet. 
+ 
+void  DeleteWorksheet (int index) 
+  Delete a worksheet by index. index start from 1 not 0. 
+ 
+void  DeleteWorksheet (string name) 
+  Delete a worksheet by name. 
+ 
+void  SetCurrentWorksheet (string name) 
+  Set the current worksheet by name. 
+ 
+void  SetCurrentWorksheet (int index) 
+  Set the current worksheet by index. 
+ 
+void  SaveAs2007 (string fullPath) 
+  Saves as excel 2007 format. 
+ 
+void  SaveAs2003 (string fullPath) 
+  Saves as excel 2003 format. 
+ 
+void  SetRange (string from, string to) 
+  Set the column ranges e.g A1 B30 or A1 A1 if you want. 
+ 
+void  SetRangeValue (string value) 
+  Set the value of the range. 
+ 
+void  SetRangeValue (string[,] value) 
+  Set the value of the range. 
+ 
+string[,]  GetRangeValue (string value) 
+  Returns a multidimensional array of the range. 
+ 
+void  FormatRangeFont (string from, string to, bool bold, bool italic, bool underline, double?fontSize, Color?fontColor, string fontName) 
+  Formats the font in a cell, bold italic and underline take a bool as a value. Fontsize font color and font type are all nullable so you can write null if you dont want to specify. 
+ 
+void  FormatRange (string from, string to, Color?background, Align vertical, Align horizontal, BorderType borderType, BorderLineStyle borderStyle) 
+  Format the background color alignment and border property of a range. 
+ 
+string  GetCellValue (string location) 
+  Get the value of a cell e.g A1. 
+ 
+void  SetCellValue (string location, string value) 
+  Set the value of a cell e.g A1. 
+ 
+void  FormatCellFont (string location, bool bold, bool italic, bool underline, double?fontsize, Color?fontcolor, string fontname) 
+  Formats the font in a cell, bold italic and underline take a bool as a value. Fontsize font color and font type are all nullable so you can write null if you dont want to specify. 
+ 
+void  PrintWorksheet (int copies) 
+  Prints the current worksheet. 
+ 
+void  PrintAllWorksheets (int copies) 
+  Prints all the worksheets. 
+ 
+Properties 
+string  CurrentWorksheet [get] 
+  Get the current worksheet you are working with. 
+ 
+string  GetRangeAddress [get] 
+  Get the address of current range you are working with. 
+ 
+int  WorksheetCount [get] 
+  Get the current number of worksheets. 
+ 
+List< string >  WorksheetNames [get] 
+  Return a list of worksheet names. 
+ 
+bool  WorksheetBlank [get] 
+  Returns whether a worksheet has any values or not. Cells with white space are considered to be empty.  

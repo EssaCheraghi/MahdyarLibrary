@@ -1,0 +1,20 @@
+﻿<Window x:Class="Mahdyar_Library_Tester.Win_DigitConvertor"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Mahdyar_Library_Tester"
+        mc:Ignorable="d"
+        Title="Win_DigitConvertor" Height="370.213" Width="539.362">
+    <Grid>
+        <RichTextBox x:Name="Rtxt_Text" HorizontalAlignment="Left" Margin="42,44,0,46" Width="381">
+            <FlowDocument>
+                <Paragraph>
+                    <Run Text="RichTextBox"/>
+                </Paragraph>
+            </FlowDocument>
+        </RichTextBox>
+        <Button Name="Btn_ToEnglishDigits" Click="Btn_ToEnglishDigits_Click" Content="Convert To English Digits" HorizontalAlignment="Left" Margin="42,0,0,21" VerticalAlignment="Bottom" Width="381"/>
+
+    </Grid>
+</Window>

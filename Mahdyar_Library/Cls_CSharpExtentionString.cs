@@ -17,7 +17,6 @@ namespace Mahdyar_Library
        public static string SaltKey = "S@LT&KEY";
        public static string VIKey = "@1B2c3D4e5F6g7H8";
       
-
         public static string Ext_Reverse(this string Str_Text)
         {
             char[] charArray = Str_Text.ToCharArray();

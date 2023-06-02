@@ -1,0 +1,18 @@
+﻿################################################################################
+# This .gitignore file was automatically created by Microsoft(R) Visual Studio.
+################################################################################
+
+/Mahdyar_Library_Tester/obj/Debug/Win_ImageResizer.g.cs
+/Mahdyar_Library_Tester/obj/Debug/Win_DigitConvertor.g.cs
+/Mahdyar_Library_Tester/obj/Debug/MainWindow.g.cs
+/Mahdyar_Library_Tester/obj/Debug/MainWindow.baml
+/Mahdyar_Library_Tester/obj/Debug/Mahdyar_Library_Tester_MarkupCompile.lref
+/Mahdyar_Library_Tester/obj/Debug/Mahdyar_Library_Tester_MarkupCompile.cache
+/Mahdyar_Library_Tester/obj/Debug/Mahdyar_Library_Tester_Content.g.cs
+/Mahdyar_Library_Tester/obj/Debug/DesignTimeResolveAssemblyReferencesInput.cache
+/Mahdyar_Library_Tester/obj/Debug/App.g.cs
+/.vs/Mahdyar_Library/v17/.suo
+/.vs/Mahdyar_Library/FileContentIndex/read.lock
+/.vs/Mahdyar_Library/FileContentIndex/c940926b-5eec-4936-80b0-deb82c5ca3ed.vsidx
+/Mahdyar_Library_Tester/obj/Debug/DesignTimeResolveAssemblyReferencesInput.cache
+/.vs/Mahdyar_Library/v17/.suo
